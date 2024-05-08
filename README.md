@@ -49,7 +49,7 @@ docker run -p 3001:3001 -p 8502:8502 dagster_tutorial
 Once set up, you can run the demo pipeline via the Dagster UI, which you can access via http://localhost:3001 in your browser. In a second browser tab, open http://localhost:8502 to see your Streamlit dashboard.
 Once you have both windows open, click on the “Assets” tab and then click on “View global asset lineage” in the top right corner. Here you can take a look at your end-to-end pipeline.
 It should look like this:
-![Data Engineering Lifecycle](demo_data_engineering_pipeline.jpeg)
+![Data Engineering Lifecycle](images/demo_data_engineering_pipeline.jpeg)
 
 
 If you want to run the pipeline automatically, activate the schedules under http://localhost:3001/locations/orchestration/schedules. Once the pipeline has run end-to-end, you should notice an update of the bar chart (with the trending hacker news title keywords) in the streamlit dashboard.
