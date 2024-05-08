@@ -30,17 +30,19 @@ def load_data():
 
 
 def plot_top_words(df_top_words, placeholder):
-    plt.clf()
+    # Create a new figure for each plot to avoid interference
     plt.figure(figsize=(10, 6))
-    # Generate a random color for the bars to see the affect of reloading the app
+    # Generate a random color for the bars
     random_color = (random.random(), random.random(), random.random())
+    # Create the bar plot
     plt.bar(df_top_words["word"], df_top_words["count"], color=random_color)
     plt.xlabel("Words")
     plt.ylabel("Count")
     plt.xticks(rotation=45, ha="right")
     plt.title("Top 25 Words in Hacker News Titles")
-    # st.pyplot(plt)
+    # Display the plot in the specified Streamlit container
     placeholder.pyplot(plt)
+    plt.close()  # Close the figure to free up memory
 
 
 def check_for_updates():
