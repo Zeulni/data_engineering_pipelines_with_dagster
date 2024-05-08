@@ -1,0 +1,6 @@
+storage:
+  sqlite:
+    base_dir: './logs/dagster_metadata_storage'
+
+telemetry:
+  enabled: false
