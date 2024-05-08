@@ -10,7 +10,7 @@ import time
 # Function to inject JavaScript for auto-refresh
 def auto_refresh(interval=1):  # Interval in seconds
     # Using Streamlit's components to inject custom JavaScript for auto-refresh (page reload of localhost does not trigger streamlit script within container. This reload is just to get the updated from the local streamlit app, which is also refreshed every 1 second.)
-    st.components.v1.html(
+    st.html(
         f"""
         <script>
         setTimeout(function() {{
@@ -19,7 +19,6 @@ def auto_refresh(interval=1):  # Interval in seconds
         console.log("Page will refresh every {interval} seconds.");
         </script>
         """,
-        height=0,  # Invisible component
     )
 
 

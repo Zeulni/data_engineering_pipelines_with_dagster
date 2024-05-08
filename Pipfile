@@ -11,7 +11,7 @@ matplotlib = "*"
 pandas = "*"
 requests = "*"
 dagster-webserver = "*"
-streamlit = "*"
+streamlit = "==1.33.0"
 supervisor = "*"
 
 [dev-packages]
