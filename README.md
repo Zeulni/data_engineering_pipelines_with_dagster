@@ -53,6 +53,7 @@ It should look like this:
 
 
 If you want to run the pipeline automatically, activate the schedules under http://localhost:3001/locations/orchestration/schedules. Once the pipeline has run end-to-end, you should notice an update of the bar chart (with the trending hacker news title keywords) in the streamlit dashboard (see animated GIF).
+
 ![Data Pipeline GIF](images/dagster_demo_gif.gif)
 
 ## 🤝 Contributing
