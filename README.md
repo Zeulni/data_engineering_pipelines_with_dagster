@@ -67,8 +67,4 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 ## 📞 Contact
 Such a project can be as complicated as you want it to be, with integrating Snowflake, Databricks, DBT, Azure Service Principles, etc. If you have any questions, make sure to reach out!
 
-- Tobias Zeulner - t.zeulner@reply.de
-
-Machine Learning Reply,
-Luise-Ullrich Str 14,
-80636 Munich
+- Tobias Zeulner - tobias.zeulner@tum.de
